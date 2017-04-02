@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_option_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/ColombiaBlue"
+    tools:context="com.inkubatorit.test_application.Option_Activity">
+
+
+    <Button
+        android:text="Pilih Event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:id="@+id/button_event"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="toEventOption"/>
+
+    <Button
+        android:text="Pilih Guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/button_guest"
+        android:layout_below="@+id/button_event"
+        android:layout_centerHorizontal="true"
+        android:onClick="toGuestOption"/>
+
+    <TextView
+        android:text="Nama :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_guest"
+        android:layout_alignEnd="@+id/button_event"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="78dp"
+        android:id="@+id/namelabel" />
+
+    <TextView
+        android:text="XXXX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/namelabel"
+        android:layout_alignStart="@+id/button_event"
+        android:layout_marginStart="50dp"
+        android:id="@+id/user_name" />
+</RelativeLayout>
