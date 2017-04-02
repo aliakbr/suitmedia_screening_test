@@ -1,7 +1,6 @@
 package com.inkubatorit.test_application;
 
 import android.content.Intent;
-import android.graphics.Path;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,8 +8,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class Option_Activity extends AppCompatActivity {
     //To Pass intent response and request

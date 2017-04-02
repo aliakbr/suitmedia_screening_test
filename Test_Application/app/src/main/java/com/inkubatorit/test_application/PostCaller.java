@@ -7,11 +7,8 @@ import android.os.AsyncTask;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -33,17 +30,6 @@ public class PostCaller extends AsyncTask<String, Void, String> {
         try {
             dest = new URL(url);
             HttpURLConnection conn = (HttpsURLConnection) dest.openConnection();
-
-//            conn.setDoInput(true);
-//            conn.setDoOutput(true);
-//            conn.setRequestProperty("Content-Type", "application/json");
-//            conn.setRequestProperty("Accept", "application/json");
-//            conn.setRequestMethod("GET");
-
-//            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(conn.getOutputStream());
-//            outputStreamWriter.write(json);
-//            outputStreamWriter.close();
-
             StringBuilder sb = new StringBuilder();
             int HttpResult = conn.getResponseCode();
             if (HttpResult == HttpURLConnection.HTTP_OK) {
