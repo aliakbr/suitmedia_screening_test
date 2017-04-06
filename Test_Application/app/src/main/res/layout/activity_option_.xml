@@ -8,46 +8,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/ColombiaBlue"
+    android:background="@drawable/bg_validation"
     tools:context="com.inkubatorit.test_application.Option_Activity">
 
 
     <Button
-        android:text="Pilih Event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:id="@+id/button_event"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="toEventOption"/>
-
-    <Button
         android:text="Pilih Guest"
+        android:textColor="#FFFFFF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
         android:id="@+id/button_guest"
         android:layout_below="@+id/button_event"
         android:layout_centerHorizontal="true"
-        android:onClick="toGuestOption"/>
+        android:onClick="toGuestOption"
+        android:background="@drawable/btn_signup_normal"/>
 
-    <TextView
-        android:text="Nama :"
+    <Button
+        android:text="Pilih Event"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_signup_normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/button_event"
+        android:onClick="toEventOption"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Nama : XXXX"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name"
         android:layout_above="@+id/button_guest"
-        android:layout_alignEnd="@+id/button_event"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="78dp"
-        android:id="@+id/namelabel" />
-
-    <TextView
-        android:text="XXXX"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/namelabel"
-        android:layout_alignStart="@+id/button_event"
-        android:layout_marginStart="50dp"
-        android:id="@+id/user_name" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp" />
 </RelativeLayout>

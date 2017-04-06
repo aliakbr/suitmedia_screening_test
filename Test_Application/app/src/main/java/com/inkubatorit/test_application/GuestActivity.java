@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
@@ -30,6 +32,7 @@ public class GuestActivity extends AppCompatActivity {
     private ArrayList<String> birthday;
     private boolean data_fethced = false;
     JSONArray data;
+
     public void initializeData() throws IOException {
         guest = new ArrayList<String>();
         birthday = new ArrayList<String>();

@@ -8,29 +8,65 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/ColombiaBlue"
+    android:background="@drawable/bg_validation"
     tools:context="com.inkubatorit.test_application.LoginActivity">
-
-    <Button
-        android:text="next"
-        android:textAlignment="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="194dp"
-        android:id="@+id/button_login"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="Next"/>
-
     <EditText
-        android:layout_width="wrap_content"
+        android:background="@drawable/text_field"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:hint="masukkan nama .."
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textAlignment="center"
-        android:ems="10"
         android:layout_above="@+id/button_login"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="23dp"
         android:id="@+id/name_input" />
+
+    <Button
+        android:text="next"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_signup"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/button_login"
+        android:onClick="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/round_button"
+        android:layout_marginBottom="64dp"
+        android:id="@+id/picture_btn"
+        android:src="@drawable/btn_addphoto"
+        android:layout_above="@+id/name_input"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Selamat Datang!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Sertakan gambar profil anda untuk melengkapi profil"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

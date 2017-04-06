@@ -37,7 +37,6 @@ public class EventListActivity extends AppCompatActivity {
             R.drawable.image4,
             R.drawable.image5,
             R.drawable.image6,
-
     };
 
     public String username;
@@ -62,5 +61,10 @@ public class EventListActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    public void goToMaps(View view){
+        Intent pindah = new Intent(this, MapsActivity.class);
+        startActivity(pindah);
     }
 }

@@ -63,7 +63,6 @@ public class Option_Activity extends AppCompatActivity {
                     event_name = data.getStringExtra("event_name");
                     System.out.println(event_name);
                     DataHolder.getInstance().setData(event_name, 1);
-                    System.out.println(DataHolder.getInstance().getData(1));
                     event_button_View.setText(event_name);
                 }
                 break;
@@ -73,7 +72,6 @@ public class Option_Activity extends AppCompatActivity {
                     guest_name = data.getStringExtra("guest_name");
                     System.out.println(guest_name);
                     DataHolder.getInstance().setData(guest_name, 2);
-                    System.out.println(DataHolder.getInstance().getData(2));
                     guest_button_View.setText(guest_name);
                 }
                 break;

@@ -11,25 +11,30 @@
     tools:context="com.inkubatorit.test_application.EventListActivity">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/title"
-        android:background="@color/ColombiaBlue">
-
+        android:id="@+id/title">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_backarticle_selected"/>
         <TextView
-            android:text="EVENT"
-            android:textSize="25dp"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            android:layout_marginTop="6dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView" />
+            android:text="Event List"
+            android:textColor="@color/ColombiaBlue"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/btn_newmediaarticle_normal"
+            android:onClick="goToMaps"/>
     </LinearLayout>
 
     <ListView
