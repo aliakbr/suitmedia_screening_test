@@ -17,6 +17,7 @@
         android:inputType="textPersonName"
         android:hint="masukkan nama .."
         android:textColor="#FFFFFF"
+        android:textCursorDrawable="@null"
         android:textColorHint="#FFFFFF"
         android:textAlignment="center"
         android:layout_above="@+id/button_login"

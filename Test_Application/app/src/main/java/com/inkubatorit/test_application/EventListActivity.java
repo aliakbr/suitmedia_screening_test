@@ -31,12 +31,12 @@ public class EventListActivity extends AppCompatActivity {
             "11 Agustus 2017",
     };
     Integer[] imageId = {
-            R.drawable.image1,
-            R.drawable.image2,
-            R.drawable.image3,
-            R.drawable.image4,
-            R.drawable.image5,
-            R.drawable.image6,
+            R.drawable.event1,
+            R.drawable.event2,
+            R.drawable.event3,
+            R.drawable.event4,
+            R.drawable.event5,
+            R.drawable.event6,
     };
 
     public String username;
@@ -66,5 +66,9 @@ public class EventListActivity extends AppCompatActivity {
     public void goToMaps(View view){
         Intent pindah = new Intent(this, MapsActivity.class);
         startActivity(pindah);
+    }
+
+    public void goBack(View view){
+        finish();
     }
 }

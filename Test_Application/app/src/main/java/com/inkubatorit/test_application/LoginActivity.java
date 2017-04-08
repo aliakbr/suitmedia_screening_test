@@ -1,10 +1,8 @@
 package com.inkubatorit.test_application;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,13 +14,7 @@ public class LoginActivity extends AppCompatActivity {
     public EditText input;
 
     public boolean isPalindrome(String s){
-        String reversed = new StringBuffer(s).reverse().toString();
-        if (s == reversed){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return s.equals(new StringBuffer(s).reverse().toString());
     }
 
     @Override
@@ -54,7 +46,6 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, "" + message,
                         Toast.LENGTH_SHORT).show();
                 Intent myIntent = new Intent(LoginActivity.this, Option_Activity.class);
-                //        myIntent.putExtra("username", username); //Optional parameters
                 DataHolder.getInstance().setData(username, 0);
                 LoginActivity.this.startActivity(myIntent);
             }
